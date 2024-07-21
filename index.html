@@ -13,9 +13,9 @@
         }
 
         body {
-            background-image: url(./assets/rachel-ellis-4ZM531YP3VM-unsplash\ \(1\).jpg),url(./assets/nice-backk.jpg);
+            background-image: url(./assets/rachel-ellis-4ZM531YP3VM-unsplash\ \(1\).jpg), url(./assets/nice-backk.jpg);
             background-size: cover;
-            background-blend-mode:overlay;
+            background-blend-mode: soft-light;
             padding: 0px;
             margin: 0px;
         }
@@ -45,6 +45,7 @@
 
         img {
             float: right;
+            max-width: 100%;
         }
 
         .signup a {
@@ -167,7 +168,7 @@
         .nav-btns {}
 
         .standout {
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
         .fe {
@@ -181,34 +182,40 @@
 
 
         @media (max-width:481px) {
-            .res {
+            .box-1,.box-2 {
                 display: flex;
                 flex-wrap: wrap;
             }
 
             .intro-pic {
-                max-width: 300px;
+                max-width: 100%;
                 object-fit: contain;
             }
 
-            .features {
-                display: flex;
-                flex-direction: column;
+           
+            .intro {
+                margin: 10px 0px;
             }
+
+            .intro div {
+                max-width: 100%;
+            }
+
+            
 
         }
 
         .flip-box {
-            
-            height: 300px;
+
+            height: 360px;
             width: 300px;
-            background-color:transparent;
-            
-            
+            background-color: transparent;
+
+
         }
 
         .inner {
-        
+
             position: relative;
             width: 100%;
             height: 100%;
@@ -227,13 +234,14 @@
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
-            background: rgb(89, 182, 128,0.8);
-            display: flex;flex-direction: column;
+            background: rgb(89, 182, 128, 0.8);
+            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             border-radius: 20px;
-            
-            
+
+
 
         }
 
@@ -247,7 +255,7 @@
             padding: 30px 20px 50px 20px;
             padding-botom: 19px;
             font-size: 18px;
-            
+
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -316,7 +324,7 @@
                 <button class="get-started"><a href="#" style="color: #f2f2f2;text-decoration: none;">Get
                         Started</a></button>
             </div>
-            <div class="box-1 res" style="display: flex;gap: 30px;align-items: center;margin-left: 0px;">
+            <div class="box-1 res" style="display: flex;gap: 30px;align-items: center;margin-left: 0px;flex-wrap: wrap;">
                 <div class="flip-box">
                     <div class="inner">
                         <div class="front">
