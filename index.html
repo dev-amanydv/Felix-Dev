@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev-Heads</title>
+    <title>FELIX</title>
     <style>
         body {
             background-image: url(./assets/annie-spratt-FSFfEQkd1sc-unsplash.jpg);
@@ -49,6 +49,17 @@
             margin-left: 0px;
         }
 
+        .brand {
+            padding: 0px;
+            margin: 0px;
+            font-family: Source Code Pro, sans-serif;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            padding-top: 12px;
+            margin-left: 30px;
+        }
+
         .navbar ul {
             display: flex;
             gap: 30px
@@ -60,8 +71,8 @@
         }
 
         .search-box {
-            width: 200px;
-            border-radius: 5px;
+            width: 500px;
+            border-radius: 20px;
             height: 1.8em;
             padding-left: 30px;
         }
@@ -212,6 +223,7 @@
         }
 
         .front {
+            padding: 30px;
             position: absolute;
             width: 100%;
             height: 100%;
@@ -225,6 +237,7 @@
             font-size: 20px;
             text-align: center;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            box-sizing: border-box;
 
 
 
@@ -257,6 +270,8 @@
                 max-width: 100%;
                 object-fit: contain;
             }
+
+
 
 
             .intro {
@@ -300,6 +315,10 @@
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -314,6 +333,13 @@
 
 
         <div class="navbar ">
+            <div class="brand">
+                <h1>Felix</h1>
+            </div>
+            <div class="search-div">
+                <form action="#" class="search"><input type="text" name="Search" placeholder="Search..."
+                        class="search-box"></form>
+            </div>
 
             <ul>
                 <li class="nav-btns active"><a href="./index.html"> Home</a></li>
@@ -321,15 +347,12 @@
                 <li class="nav-btns"><a href="#">Compare</a></li>
                 <li class="nav-btns"><a href="aboutme.html">About us</a></li>
             </ul>
-            <div class="search-div">
-                <form action="#" class="search"><input type="text" name="Search" placeholder="Search..."
-                        class="search-box"></form>
-            </div>
+
         </div>
         <div class="intro"
             style="margin-left:30px;margin-right:30px ;position: relative;margin-top: 80px;display: flex;padding: 10px;flex-wrap: wrap;border-radius: 10px;justify-content: space-around;">
             <div style="width: 550px;margin-bottom: 30px;">
-                <h2 class="start  title" style="font-size: 40px;font-weight:900;">Welcome to Dev-Heads</h2>
+                <h2 class="start  title" style="font-size: 40px;font-weight:900;">Welcome to Felix</h2>
                 <p class="start standout"
                     style="font-size: 25px;font-weight: 100;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                     Discover stunning visuals captured exclusively with the latest smartphone cameras, showcasing the
@@ -356,7 +379,7 @@
         <div class="features">
             <div class="description ">
                 <h2 class="title"><b style="font-size: 35px; ">Discover the best in Camera Smartphones</b></h2>
-                <p style="font-size: 25px;" class="standout">At Dev-Heads, we bring you the ultimate destination for
+                <p style="font-size: 25px;" class="standout">At Felix, we bring you the ultimate destination for
                     exploring the capabilities of the latest Camera Smartphones. Whether you’re a photography
                     enthusiast, a professional, or simply someone who loves capturing moments, our website is designed
                     to help you make informed decisions and get the best smartphone to capture memories.</p>
@@ -490,7 +513,7 @@
             <li>FAQs</li>
             <li>About us</li>
         </ul>
-        
+
         <footer style="text-align: center;color:  rgb(165, 160, 160);">© 2024 Dev-Heads, Inc</footer>
 
 

@@ -48,6 +48,16 @@
             padding: 0px 10px;
             margin-left: 0px;
         }
+        .brand {
+            padding: 0px;
+            margin: 0px;
+            font-family: Source Code Pro, sans-serif;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            padding-top: 12px;
+            margin-left: 30px;
+        }
 
         .navbar ul {
             display: flex;
@@ -60,8 +70,8 @@
         }
 
         .search-box {
-            width: 200px;
-            border-radius: 5px;
+            width: 500px;
+            border-radius: 20px;
             height: 1.8em;
             padding-left: 30px;
         }
@@ -85,11 +95,19 @@
             }
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <div class="navbar ">
+            <div class="brand"><h1>Felix</h1></div>
+            <div class="search-div">
+                <form action="#" class="search"><input type="text" name="Search" placeholder="Search..."
+                        class="search-box"></form>
+            </div>
 
             <ul>
                 <li class="nav-btns active"><a href="./index.html"> Home</a></li>
@@ -97,10 +115,7 @@
                 <li class="nav-btns"><a href="#">Compare</a></li>
                 <li class="nav-btns"><a href="aboutme.html">About us</a></li>
             </ul>
-            <div class="search-div">
-                <form action="#" class="search"><input type="text" name="Search" placeholder="Search..."
-                        class="search-box"></form>
-            </div>
+            
         </div>
 
 
