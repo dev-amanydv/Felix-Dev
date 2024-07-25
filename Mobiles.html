@@ -6,17 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile-Camera Samples</title>
     <style>
-        .navbar {
-            display: flex;
-            font-family: sans-serif;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            background: rgb(236, 255, 220, 0.8);
-            ;
-            padding: 0px 10px;
-            margin-left: 0px;
-        }
-
         .container {
             max-width: 1920px;
             padding: 0px;
@@ -24,22 +13,11 @@
         }
 
         body {
-            background-image: url(./assets/rachel-ellis-4ZM531YP3VM-unsplash\ \(1\).jpg);
+            background-image: url(./assets/annie-spratt-FSFfEQkd1sc-unsplash.jpg);
             background-size: cover;
+            background-blend-mode: ;
             padding: 0px;
             margin: 0px;
-        }
-
-        .search-div {
-            padding-top: 12px;
-            padding-right: 20px;
-        }
-
-        .search-box {
-            width: 200px;
-            border-radius: 5px;
-            height: 1.8em;
-            padding-left: 30px;
         }
 
         li {
@@ -60,21 +38,68 @@
             font-size: large;
         }
 
-        .product {
-            height: 500px;
-            width: 300px;
-            background-color: rgb(160, 124, 194, 0.5);
+        .navbar {
+            display: flex;
+            font-family: sans-serif;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background: rgb(156, 189, 156);
+
+            padding: 0px 10px;
+            margin-left: 0px;
         }
+
+        .navbar ul {
+            display: flex;
+            gap: 30px
+        }
+
+        .search-div {
+            padding-top: 12px;
+            padding-right: 20px;
+        }
+
+        .search-box {
+            width: 200px;
+            border-radius: 5px;
+            height: 1.8em;
+            padding-left: 30px;
+        }
+
 
         .mobiles {
             display: inline-flex;
             flex-wrap: wrap;
-            justify-content: space-around;
             margin-top: 50px;
+            gap: 60px;
+            padding: 20px;
+            justify-content: space-evenly;
+
+        }
+
+        .product {
+            height: 500px;
+            width: 300px;
+            background-color: rgb(177, 179, 178);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .product a {
+            text-decoration: none;
+            color: black;
         }
 
         img {
             padding: 10px;
+        }
+
+        @media (max-width:481px) {
+            .navbar ul {
+                display: flex;
+                gap: 10px;
+            }
+
         }
     </style>
 
@@ -97,13 +122,56 @@
         </div>
         <div class="mobiles">
             <div class="product">
-                <img src="./assets/Galaxy s24 ultra.png" width="280" alt="">
+                <a href="./Samsung Galaxy S24 Ultra.html"><img src="./assets/samsungs24u.webp" width="280" alt=""></a>
 
-                <h3>Samsung Galaxy S24 Ultra</h3>
+                <h3><a href="./Samsung Galaxy S24 Ultra.html
+                    ">Samsung Galaxy S24 Ultra</a></h3>
+                <p>With the most megapixels on a smartphone and AI processing, Galaxy S24 Ultra sets the industry
+                    standard for image quality every time you hit the shutter. What's more, the new ProVisual engine
+                    recognizes objects — improving colour tone, reducing noise and bringing out detail.</p>
             </div>
-            <div class="product">Redmi</div>
-            <div class="product">Vivo</div>
-            <div class="product">Iqoo</div>
+            <div class="product">
+                <a href="./Xiaomi 14 Ultra.html"><img src="./assets/xiaomi14ultra.webp" width="280" alt=""></a>
+                <h3><a href="./Xiaomi 14 Ultra.html">Xiaomi 14 Ultra</a></h3>
+                <p>Leica 50MP Quad cameras capture every moment in detail. LYT 900 1inch image sensor with f/1.63 -
+                    f/4.0 variable aperture. Xiaomi 14 Ultra records 8K video on all the cameras Dolby Vision for a
+                    professional cinematography experience.</p>
+            </div>
+            <div class="product">
+               <a href="./IQOO 12.html"> <img src="./assets/Iqoo 12.webp" width="280" alt=""></a>
+                <h3><a href="./IQOO 12.html">IQOO 12</a></h3>
+                <p>50MP 1/1.3" Astrography Camera (f/1.68) + 50MP Ultra - Wide Angle Camera (f/1.20) + 64MP 3X Periscope
+                    Telephoto Camera (f/2.57) with 100X Digital zoom.</p>
+            </div>
+            <div class="product">
+                <a href="./Oneplus125g.html"><img src="./assets/Oneplus 125g.jpg" width="280" alt=""></a>
+                <h3><a href="./Oneplus125g.html">OnePlus 12 5G</a></h3>
+                <p>Pro-Level Hasselblad Camera System: -Primary 50MP Sony's LYT-808 with OIS - 64 MP 3X Periscope
+                    Telephoto for studio-level portraits - 48 MP Ultra-wide 114° Fov</p>
+
+
+            </div>
+            <div class="product">
+                <a href="./Iphone 15 Pro Max.html"><img src="./assets/iphone15promax.jpg" width="280" alt=""></a>
+                <h3><a href="./Iphone 15 Pro Max.html
+                    ">Iphone 15 Pro Max</a></h3>
+                <p>Get incredible framing flexibility with 7 pro lenses. Capture super high-resolution photos with more
+                    color and detail using the 48MP Main camera. And take sharper close-ups from farther away with the
+                    5x Telephoto camera on iPhone 15 Pro Max.</p>
+
+
+
+            </div>
+            <div class="product">
+                <a href="./Motorola Razr 40 ULTRA.html"><img src="./assets/motorazr40ultra.webp" width="280" alt=""></a>
+                <h3><a href="./Motorola Razr 40 ULTRA.html">Motorola Razr 40 ULTRA</a></h3>
+                <p>12MP (f/1.5, 1.4μm) | OIS, Rear Camera - 13MP (f/2.2, 1.12μm) | Ultra-wide + macro | FOV 108°, Single
+                    LED flash</p>
+
+
+
+
+            </div>
 
 
 
@@ -112,6 +180,16 @@
 
 
         </div>
+        <hr>
+        <ul style="list-style: none;display: flex;justify-content: center;font-size: 20px;color:  rgb(165, 160, 160);">
+            <li>Home</li>
+            <li>Contact us</li>
+            <li>FAQs</li>
+            <li>About us</li>
+        </ul>
+        
+        <footer style="text-align: center;color:  rgb(165, 160, 160);">© 2024 Dev-Heads, Inc</footer>
+
     </div>
 
 </body>
