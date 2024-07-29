@@ -80,6 +80,17 @@
         .intro {
             color: #f5f5f5;
             margin-bottom: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+            position: relative;
+            margin-top: 80px;
+            display: flex;
+            padding: 10px;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            justify-content: space-around;
+
+
         }
 
         .title {
@@ -309,7 +320,7 @@
                 display: flex;
                 width: 100%;
                 gap: 15px;
-            
+
             }
 
             .navbar {
@@ -318,20 +329,24 @@
             }
 
             .brand {
-                
+
                 margin: auto;
                 width: 50%;
                 padding: 10px;
-                
+
             }
-            .brand h1  {text-align: center;margin: 0px 30px;}
+
+            .brand h1 {
+                text-align: center;
+                margin: 0px 30px;
+            }
 
 
 
 
             .search-div {
                 margin: auto;
-                width:95%;
+                width: 95%;
                 padding: 10px;
             }
 
@@ -346,7 +361,71 @@
         }
 
         /* Medium devices such as tablets (768px and up) */
-        @media only screen and (min-width: 768px) {}
+        @media only screen and (min-width: 768px) and (max-width:1080) {
+            .intro-pic {
+                max-width: 100%;
+                object-fit: contain;
+            }
+
+
+
+
+            .intro {
+
+                margin-left: 30px;
+                margin-right: 30px;
+                position: relative;
+                margin-top: 80px;
+                display: flex;
+                padding: 10px;
+                flex-wrap: wrap;
+                border-radius: 10px;
+                justify-content: space-around;
+            }
+
+            .intro div {
+                max-width: 100%;
+            }
+
+            .features {
+                flex-direction: column;
+            }
+
+            .description {
+                width: 90%;
+            }
+
+            .feature-box {
+                width: 90%;
+            }
+
+            .navbar ul {
+                display: flex;
+                gap: 15px;
+
+            }
+
+            .navbar {
+                display: flex;
+                padding-bottom: 5px;
+            }
+
+
+
+
+
+            .search-div {
+                padding-top: 12px;
+                padding-right: 20px;
+            }
+
+            .search-box {
+                width: 250px;
+                border-radius: 20px;
+                height: 1.8em;
+                padding-left: 30px;
+            }
+        }
 
         /* Large devices such as laptops (1024px and up) */
         @media only screen and (min-width: 1024px) {}
@@ -390,8 +469,7 @@
             </ul>
 
         </div>
-        <div class="intro"
-            style="margin-left:30px;margin-right:30px ;position: relative;margin-top: 80px;display: flex;padding: 10px;flex-wrap: wrap;border-radius: 10px;justify-content: space-around;">
+        <div class="intro" style="">
             <div style="width: 550px;margin-bottom: 30px;">
                 <h2 class="start  title" style="font-size: 40px;font-weight:900;">Welcome to Felix</h2>
                 <p class="start standout"
@@ -569,5 +647,7 @@
 
 
     </div>
+    <script src="./script.js"></script>
 
 </body>
+</html>

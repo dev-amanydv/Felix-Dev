@@ -48,6 +48,7 @@
             padding: 0px 10px;
             margin-left: 0px;
         }
+
         .brand {
             padding: 0px;
             margin: 0px;
@@ -70,17 +71,86 @@
         }
 
         .search-box {
-            width:500px;
+            width: 500px;
             border-radius: 20px;
             height: 1.8em;
             padding-left: 30px;
         }
 
-        @media (max-width:481px) {
+        @media only screen and (max-width: 640px) {
+
+
+
+
             .navbar ul {
                 display: flex;
-                gap: 10px
+                width: 100%;
+                gap: 15px;
+
             }
+
+            .navbar {
+                display: block;
+                padding-bottom: 5px;
+            }
+
+            .brand {
+
+                margin: auto;
+                width: 50%;
+                padding: 10px;
+
+            }
+
+            .brand h1 {
+                text-align: center;
+                margin: 0px 30px;
+            }
+
+
+
+
+            .search-div {
+                margin: auto;
+                width: 95%;
+                padding: 10px;
+            }
+
+            .search-box {
+                width: 90%;
+                border-radius: 5px;
+                height: 1.8em;
+                padding-left: 20px;
+            }
+
+
+        }
+
+        /* Medium devices such as tablets (768px and up) */
+        @media only screen and (min-width: 768px) and (max-width:1080) {
+
+
+
+
+
+
+
+
+
+            .navbar ul {
+                display: flex;
+                gap: 15px;
+
+            }
+
+            .navbar {
+                display: flex;
+                padding-bottom: 5px;
+            }
+
+
+
+
 
             .search-div {
                 padding-top: 12px;
@@ -88,22 +158,31 @@
             }
 
             .search-box {
-                width: 300px;
-                border-radius: 5px;
+                width: 250px;
+                border-radius: 20px;
                 height: 1.8em;
-                padding-left: 20px;
+                padding-left: 30px;
             }
         }
+
+        /* Large devices such as laptops (1024px and up) */
+        @media only screen and (min-width: 1024px) {}
+
+        /* Largest devices such as desktops (1280px and up) */
+        @media only screen and (min-width: 1280px) {}
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <div class="navbar ">
-            <div class="brand"><h1>Felix</h1></div>
+            <div class="brand">
+                <h1>Felix</h1>
+            </div>
             <div class="search-div">
                 <form action="#" class="search"><input type="text" name="Search" placeholder="Search..."
                         class="search-box"></form>
@@ -115,7 +194,7 @@
                 <li class="nav-btns"><a href="#">Compare</a></li>
                 <li class="nav-btns"><a href="aboutme.html">About us</a></li>
             </ul>
-           
+
         </div>
 
 
@@ -135,7 +214,7 @@
             <li>FAQs</li>
             <li>About us</li>
         </ul>
-        
+
         <footer style="text-align: center;color:  rgb(165, 160, 160);">© 2024 Dev-Heads, Inc</footer>
 
 
