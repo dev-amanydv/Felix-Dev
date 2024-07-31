@@ -6,199 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile-Camera Samples</title>
     <style>
-        .container {
-            max-width: 1920px;
-            padding: 0px;
-            margin: 0px;
-        }
-
-        body {
-            background-image: url(./assets/annie-spratt-FSFfEQkd1sc-unsplash.jpg);
-            background-size: cover;
-            background-blend-mode: ;
-            padding: 0px;
-            margin: 0px;
-        }
-
-        li {
-            margin-right: 20px;
-            justify-content: center;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0px;
-            display: inline-flex;
-        }
-
-        li a {
-            text-decoration: none;
-            color: black;
-            font-weight: bolder;
-            font-size: large;
-        }
-
-        .navbar {
-            display: flex;
-            font-family: sans-serif;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            background: rgb(156, 189, 156);
-
-            padding: 0px 10px;
-            margin-left: 0px;
-        }
-
-        .brand {
-            padding: 0px;
-            margin: 0px;
-            font-family: Source Code Pro, sans-serif;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            padding-top: 12px;
-            margin-left: 30px;
-        }
-
-        .navbar ul {
-            display: flex;
-            gap: 30px
-        }
-
-        .search-div {
-            padding-top: 12px;
-            padding-right: 20px;
-        }
-
-        .search-box {
-            width: 500px;
-            border-radius: 20px;
-            height: 1.8em;
-            padding-left: 30px;
-        }
-
-
-        .mobiles {
-            display: inline-flex;
-            flex-wrap: wrap;
-            margin-top: 50px;
-            gap: 60px;
-            padding: 20px;
-            justify-content: space-evenly;
-
-        }
-
-        .product {
-            height: 500px;
-            width: 300px;
-            background-color: rgb(177, 179, 178);
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .product a {
-            text-decoration: none;
-            color: black;
-        }
-
-        img {
-            padding: 10px;
-        }
-
-        @media only screen and (max-width: 640px) {
-
-
-
-
-            .navbar ul {
-                display: flex;
-                width: 100%;
-                gap: 15px;
-
-            }
-
-            .navbar {
-                display: block;
-                padding-bottom: 5px;
-            }
-
-            .brand {
-
-                margin: auto;
-                width: 50%;
-                padding: 10px;
-
-            }
-
-            .brand h1 {
-                text-align: center;
-                margin: 0px 30px;
-            }
-
-
-
-
-            .search-div {
-                margin: auto;
-                width: 95%;
-                padding: 10px;
-            }
-
-            .search-box {
-                width: 90%;
-                border-radius: 5px;
-                height: 1.8em;
-                padding-left: 20px;
-            }
-
-
-        }
-
-        /* Medium devices such as tablets (768px and up) */
-        @media only screen and (min-width: 768px) and (max-width:1080) {
-
-
-
-
-
-
-
-
-
-            .navbar ul {
-                display: flex;
-                gap: 15px;
-
-            }
-
-            .navbar {
-                display: flex;
-                padding-bottom: 5px;
-            }
-
-
-
-
-
-            .search-div {
-                padding-top: 12px;
-                padding-right: 20px;
-            }
-
-            .search-box {
-                width: 250px;
-                border-radius: 20px;
-                height: 1.8em;
-                padding-left: 30px;
-            }
-        }
-
-        /* Large devices such as laptops (1024px and up) */
-        @media only screen and (min-width: 1024px) {}
-
-        /* Largest devices such as desktops (1280px and up) */
-        @media only screen and (min-width: 1280px) {}
+        
     </style>
+    <link rel="stylesheet" href="./stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
@@ -227,7 +37,7 @@
         </div>
         <div class="mobiles">
             <div class="product">
-                <a href="./Samsung Galaxy S24 Ultra.html"><img src="./assets/samsungs24u.webp" width="280" alt=""></a>
+                <a href="./Samsung Galaxy S24 Ultra.html"><img class="mobiles-img" src="./assets/samsungs24u.webp" width="280" alt=""></a>
 
                 <h3><a href="./Samsung Galaxy S24 Ultra.html
                     ">Samsung Galaxy S24 Ultra</a></h3>
@@ -236,20 +46,20 @@
                     recognizes objects — improving colour tone, reducing noise and bringing out detail.</p>
             </div>
             <div class="product">
-                <a href="./Xiaomi 14 Ultra.html"><img src="./assets/xiaomi14ultra.webp" width="280" alt=""></a>
+                <a href="./Xiaomi 14 Ultra.html"><img class="mobiles-img" src="./assets/xiaomi14ultra.webp" width="280" alt=""></a>
                 <h3><a href="./Xiaomi 14 Ultra.html">Xiaomi 14 Ultra</a></h3>
                 <p>Leica 50MP Quad cameras capture every moment in detail. LYT 900 1inch image sensor with f/1.63 -
                     f/4.0 variable aperture. Xiaomi 14 Ultra records 8K video on all the cameras Dolby Vision for a
                     professional cinematography experience.</p>
             </div>
             <div class="product">
-                <a href="./IQOO 12.html"> <img src="./assets/Iqoo 12.webp" width="280" alt=""></a>
+                <a href="./IQOO 12.html"> <img class="mobiles-img" src="./assets/Iqoo 12.webp" width="280" alt=""></a>
                 <h3><a href="./IQOO 12.html">IQOO 12</a></h3>
                 <p>50MP 1/1.3" Astrography Camera (f/1.68) + 50MP Ultra - Wide Angle Camera (f/1.20) + 64MP 3X Periscope
                     Telephoto Camera (f/2.57) with 100X Digital zoom.</p>
             </div>
             <div class="product">
-                <a href="./Oneplus125g.html"><img src="./assets/Oneplus 125g.jpg" width="280" alt=""></a>
+                <a href="./Oneplus125g.html"><img class="mobiles-img" src="./assets/Oneplus 125g.jpg" width="280" alt=""></a>
                 <h3><a href="./Oneplus125g.html">OnePlus 12 5G</a></h3>
                 <p>Pro-Level Hasselblad Camera System: -Primary 50MP Sony's LYT-808 with OIS - 64 MP 3X Periscope
                     Telephoto for studio-level portraits - 48 MP Ultra-wide 114° Fov</p>
@@ -257,7 +67,7 @@
 
             </div>
             <div class="product">
-                <a href="./Iphone 15 Pro Max.html"><img src="./assets/iphone15promax.jpg" width="280" alt=""></a>
+                <a href="./Iphone 15 Pro Max.html"><img class="mobiles-img" src="./assets/iphone15promax.jpg" width="280" alt=""></a>
                 <h3><a href="./Iphone 15 Pro Max.html
                     ">Iphone 15 Pro Max</a></h3>
                 <p>Get incredible framing flexibility with 7 pro lenses. Capture super high-resolution photos with more
@@ -268,7 +78,7 @@
 
             </div>
             <div class="product">
-                <a href="./Motorola Razr 40 ULTRA.html"><img src="./assets/motorazr40ultra.webp" width="280" alt=""></a>
+                <a href="./Motorola Razr 40 ULTRA.html"><img class="mobiles-img" src="./assets/motorazr40ultra.webp" width="280" alt=""></a>
                 <h3><a href="./Motorola Razr 40 ULTRA.html">Motorola Razr 40 ULTRA</a></h3>
                 <p>12MP (f/1.5, 1.4μm) | OIS, Rear Camera - 13MP (f/2.2, 1.12μm) | Ultra-wide + macro | FOV 108°, Single
                     LED flash</p>
@@ -296,6 +106,8 @@
         <footer style="text-align: center;color:  rgb(165, 160, 160);">© 2024 Dev-Heads, Inc</footer>
 
     </div>
+    <script src="./script.js"></script>
+
 
 </body>
 
