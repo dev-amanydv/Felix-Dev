@@ -1,6 +1,6 @@
 body {
-    background-image: url();
-    background: radial-gradient(939px at 94.7% 50%, rgb(0, 178, 169) 0%, rgb(0, 106, 101) 76.9%);
+    background-image: url(./assets/modern-office-interior-with-white-walls-concrete-floor-white-computer-table-with-laptop-plant-3d-rendering-mock-up.jpg);
+    background:;
     ;
     background-size: cover;
 
@@ -25,9 +25,10 @@ ul {
     display: inline-flex;
 }
 
-li a {
+.nav-btns {
     text-decoration: none;
-    color: black;
+    color: #000000;
+   
     font-weight: bolder;
     font-size: large;
 }
@@ -37,7 +38,7 @@ li a {
     font-family: sans-serif;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: rgb(156, 189, 156);
+    background: rgb(221, 224, 223);
     ;
     padding: 0px 10px;
     margin-left: 0px;
@@ -57,6 +58,21 @@ li a {
 .navbar ul {
     display: flex;
     gap: 30px
+}
+.d-btn{
+    background-color: black;
+    width: 140px;
+    color:rgb(2, 255, 2);
+    height: 1.8rem;
+    margin-top:;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    padding:0px 10px;
+
+}
+.d-btn:hover{
+    border: 2px solid rgb(0, 255, 94);
 }
 
 .search-div {
@@ -83,7 +99,7 @@ li a {
     overflow: hidden;
     mask-image: linear-gradient(to right,
             rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 15%,
             rgba(0, 0, 0, 1) 80%,
             rgba(0, 0, 0, 0));
 
@@ -136,12 +152,8 @@ li a {
 }
 
 
-
-
-
-
 .intro {
-    color: #f5f5f5;
+    color: #000000;
     margin-bottom: 50px;
     margin-left: 30px;
     margin-right: 30px;
@@ -158,7 +170,7 @@ li a {
 
 .title {
     font-family: Arial, Helvetica, sans-serif;
-    color: #38bda0;
+    color:  rgb(17, 18, 17);
 }
 
 img {
@@ -184,17 +196,17 @@ img {
     height: 3.4em;
     color: white;
     background-color: transparent;
-    border: 2px solid rgb(197, 191, 191);
+    border: 2px solid rgb(14, 14, 14);
     border-radius: 5px;
 }
 
 .login:hover a {
-    background-color: #b4afaf;
+    background-color: #ffffff;
     color: black;
 }
 
 .login:hover {
-    background-color: #b4afaf;
+    background-color: #ffffff;
     color: black;
 }
 
@@ -217,12 +229,12 @@ img {
     text-decoration: none;
     transition-duration: 0.4s;
     cursor: pointer;
-    color: white;
+    color: rgb(10, 10, 10);
 }
 
-.description h2 {
+.des-heading {
     font-family: Arial, Helvetica, sans-serif;
-    color: #38bda0;
+    color: black;
 }
 
 .get-started {
@@ -254,8 +266,8 @@ img {
 
 
 
-.features .description p {
-    color: rgb(201, 193, 193);
+.des-para{
+    color: rgb(33, 33, 33);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -273,10 +285,6 @@ img {
 }
 
 
-
-.standout {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
 
 .flip-box {
@@ -337,6 +345,13 @@ img {
     padding-botom: 19px;
     font-size: 18px;
 
+}
+
+.footer-menu{
+    list-style: none;display: flex;justify-content: center;font-size: 20px;
+}
+.footer{
+    text-align: center;color:  rgb(0, 0, 0)
 }
 
 
