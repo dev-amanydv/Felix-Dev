@@ -1,7 +1,9 @@
 body {
-    background-image: url(./assets/annie-spratt-FSFfEQkd1sc-unsplash.jpg);
+    background-image: url();
+    background: radial-gradient(939px at 94.7% 50%, rgb(0, 178, 169) 0%, rgb(0, 106, 101) 76.9%);
+    ;
     background-size: cover;
-    background-blend-mode: ;
+
     padding: 0px;
     margin: 0px;
 }
@@ -68,6 +70,75 @@ li a {
     height: 1.8em;
     padding-left: 30px;
 }
+
+
+.wrapper {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    margin-top: 0rem;
+    max-width: 1536px;
+    margin-inline: auto;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+
+}
+
+@keyframes scrollLeft {
+
+    to {
+        left: -400px;
+    }
+
+}
+
+.item {
+    width: 400px;
+    padding: 5px;
+    font-size: 15px;
+    height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    background-color:rgb(0, 0, 0);
+    border-radius: 0px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.item1 {
+    animation-delay: calc(30s / 5 * (5 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(30s / 5 * (5 - 2) * -1);
+}
+
+.item3 {
+    animation-delay: calc(30s / 5 * (5 - 3) * -1);
+}
+
+.item4 {
+    animation-delay: calc(30s / 5 * (5 - 4) * -1);
+}
+
+.item5 {
+    animation-delay: calc(30s / 5 * (5 - 5) * -1);
+}
+
+
+
+
+
 
 .intro {
     color: #f5f5f5;
@@ -454,73 +525,70 @@ img {
 }
 
 .mobiles {
-            display: inline-flex;
-            flex-wrap: wrap;
-            margin-top: 50px;
-            gap: 60px;
-            padding: 20px;
-            justify-content: space-evenly;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 60px;
+    padding: 20px;
+    justify-content: space-evenly;
 
-        }
+}
 
-        .product {
-            height: 500px;
-            width: 300px;
-            background-color: rgb(177, 179, 178);
-            padding: 10px;
-            border-radius: 5px;
-        }
+.product {
+    height: 500px;
+    width: 300px;
+    background-color: rgb(177, 179, 178);
+    padding: 10px;
+    border-radius: 5px;
+}
 
-        .product a {
-            text-decoration: none;
-            color: black;
-        }
+.product a {
+    text-decoration: none;
+    color: black;
+}
 
-        .mobiles-img {
-            padding: 10px;
-        }
+.mobiles-img {
+    padding: 10px;
+}
 
-        
-        .aboutus {
-            display: flex;
-            background-color: rgb(209, 221, 213, 0.6);
-            flex-direction: column;
-            ;
-            border-radius: 20px;
-            padding: 50px;
-            border: 5px solid black;
-            justify-content: center;
-            width: 700px;
-        }
 
-        .name-aman {
-            align-self: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 50px;
-            font-weight: bold;
-        }
+.aboutus {
+    display: flex;
+    background-color: rgb(209, 221, 213, 0.6);
+    flex-direction: column;
+    ;
+    border-radius: 20px;
+    padding: 50px;
+    border: 5px solid black;
+    justify-content: center;
+    width: 700px;
+}
 
-        .aman {
-            align-self: center;
-            font-family: Josefin Sans;
-            border-radius: 4px;
-        }
+.name-aman {
+    align-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
 
-        .bio {
-            font-family: Josefin Sans;
-            font-size: 25px;
-            text-align: center;
-            font-weight: 300;
-        }
+.aman {
+    align-self: center;
+    font-family: Josefin Sans;
+    border-radius: 4px;
+}
 
-        
-        .about-box {
-            display: flex;
-            justify-content: space-evenly;
-            gap: 50px;
-            margin: 50px 20px 80px 20px;
-            flex-wrap: wrap;
-        }
+.bio {
+    font-family: Josefin Sans;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 300;
+}
 
-      
 
+.about-box {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 50px 20px 80px 20px;
+    flex-wrap: wrap;
+}
